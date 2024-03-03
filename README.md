@@ -15,7 +15,7 @@
 <p align="left">
 <a href="https://twitter.com/shriharikasar07" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="shriharikasar07" height="30" width="40" /></a>
 <a href="https://www.linkedin.com/in/shrihari-kasar-94b63525b/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="shrihari kasar" height="30" width="40" /></a>
-<a href="https://fb.com/shrihari kasar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="shrihari kasar" height="30" width="40" /></a>
+<a href="https://www.facebook.com/profile.php/?id=100007832227172&name=xhp_nt__fb__action__open_user" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="shrihari kasar" height="30" width="40" /></a>
 <a href="https://instagram.com/shrihari_k1436" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="shrihari_k1436" height="30" width="40" /></a>
 <a href="https://www.youtube.com/c/shriharikasar07" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="shriharikasar07" height="30" width="40" /></a>
 </p>
