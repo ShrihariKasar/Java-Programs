@@ -2,7 +2,7 @@
 -----------
 
 `HashTable.java`: Implementation of an open addressing hash table using linear probing.
-`HashTable.java`:
+\.`HashTable.java`:
 This Java program demonstrates basic set operations, including adding and deleting elements, displaying elements, searching for elements, determining set size, and performing set operations like union, intersection, difference, and subset checking.
 
 ## Features
