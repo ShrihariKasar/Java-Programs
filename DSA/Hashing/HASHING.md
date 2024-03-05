@@ -1,8 +1,22 @@
 1\. Hashing
 -----------
 
-`HashTable.java`: Implementation of an open addressing hash table using linear probing.
-\.`HashTable.java`:
+`HashTable.java`: 
+ Hash Table Implementation in Java
+
+This Java program demonstrates the implementation of a hash table with separate chaining for collision resolution. It provides options for inserting mobile numbers, displaying the hash table, and searching for mobile numbers. The program also includes choices for handling collisions using linear probing or quadratic probing.
+
+## Program Details
+
+- The program uses a hash table with separate chaining to store mobile numbers.
+- It supports two methods for handling collisions:
+  - Linear Probing: When a collision occurs, the program looks for the next available slot linearly.
+  - Quadratic Probing: When a collision occurs, the program looks for the next available slot using quadratic probing.
+  - Follow the on-screen menu to perform various operations:
+
+1.1\. Hashing
+-----------
+`SetOperations.java`:
 This Java program demonstrates basic set operations, including adding and deleting elements, displaying elements, searching for elements, determining set size, and performing set operations like union, intersection, difference, and subset checking.
 
 ## Features
