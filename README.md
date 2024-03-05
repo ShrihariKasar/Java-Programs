@@ -6,5 +6,5 @@ This repository contains Java programs that demonstrate various data structures 
 Table of Contents
 -----------------
 
-## *   [1\.Hashing](https://www.geeksforgeeks.org/hashing-data-structure/)
-## *   [2\. Trees](https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/)
+##    [1\.Hashing](https://www.geeksforgeeks.org/hashing-data-structure/)
+##    [2\. Trees](https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/)
