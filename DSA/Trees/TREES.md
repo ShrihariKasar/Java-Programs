@@ -23,5 +23,10 @@ These instructions will help you set up and run the Java program on your local m
 - Search for a value: Check if a specific value exists in the binary search tree.
 - Inorder, Preorder, and Postorder traversals: Display the nodes of the tree using these traversal methods.
 
+## Usage
+
+1. Run the program.
+2. Follow the on-screen menu to perform set operations.
+
 ## Contributing
 Feel free to contribute to this project by opening issues or submitting pull requests. Your feedback and suggestions are highly appreciated.
