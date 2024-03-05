@@ -1,24 +1,83 @@
-<h1 align="center">Hi 👋, I'm Shrihari Kasar</h1>
-<h3 align="center">A passionate frontend developer from India</h3>
+<!DOCTYPE html>
+<html lang="en">
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=shriharikasar&label=Profile%20views&color=0e75b6&style=flat" alt="shriharikasar" /> </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Programs for Data Structures and Algorithms</title>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=shriharikasar" alt="shriharikasar" /></a> </p>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
 
-<p align="left"> <a href="https://twitter.com/shriharikasar07" target="blank"><img src="https://img.shields.io/twitter/follow/shriharikasar07?logo=twitter&style=for-the-badge" alt="shriharikasar07" /></a> </p>
+        h1 {
+            color: #0366d6;
+            border-bottom: 2px solid #0366d6;
+            padding-bottom: 8px;
+        }
 
-- 🔭 I’m currently working on [Java Programming For Second Year Engineering](https://github.com/ShrihariKasar/Java-Programs)
+        h2 {
+            color: #6f42c1;
+            margin-top: 20px;
+        }
 
-- 🌱 I’m currently learning **Web Development, React, Bootstrap, still Counting**
+        p {
+            margin-bottom: 20px;
+        }
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/shriharikasar07" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="shriharikasar07" height="30" width="40" /></a>
-<a href="https://www.linkedin.com/in/shrihari-kasar-94b63525b/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="shrihari kasar" height="30" width="40" /></a>
-<a href="https://www.facebook.com/profile.php/?id=100007832227172&name=xhp_nt__fb__action__open_user" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="shrihari kasar" height="30" width="40" /></a>
-<a href="https://instagram.com/shrihari_k1436" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="shrihari_k1436" height="30" width="40" /></a>
-<a href="https://www.youtube.com/c/shriharikasar07" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="shriharikasar07" height="30" width="40" /></a>
-</p>
+        code {
+            background-color: #f1f1f1;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        pre {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Java Programs for Data Structures and Algorithms</h1>
+
+    <p>This repository contains Java programs that demonstrate various data structures and algorithms.</p>
+
+    <h2>Table of Contents</h2>
+
+    <ul>
+        <li><a href="#hashing">1. Hashing</a></li>
+        <li><a href="#trees">2. Trees</a></li>
+        <!--<li><a href="#graphs">3. Graphs</a></li>
+        <li><a href="#search-tree">4. Search Tree</a></li>
+        <li><a href="#indexing-and-multiway-trees">5. Indexing and Multiway Trees</a></li>
+        <li><a href="#file-organization">6. File Organization</a></li>-->
+    </ul>
+
+    <h2 id="hashing">1. Hashing</h2>
+
+    <p><code>OpenAddressingHashTable.java</code>: Implementation of an open addressing hash table using linear probing.</p>
+
+    <h2 id="trees">2. Trees</h2>
+
+    <p><code>BinarySearchTree.java</code>: Implementation of a binary search tree.</p>
+
+</body>
+
+</html>
