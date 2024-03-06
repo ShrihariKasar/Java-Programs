@@ -34,6 +34,22 @@ class BinaryTree {
         return root;
     }
 
+    // Add this method to the BinaryTree class
+public void display() {
+    System.out.println("Displaying all entered nodes:");
+    display(root);
+    System.out.println();
+}
+
+private void display(Node root) {
+    if (root != null) {
+        display(root.left);
+        System.out.print(root.data + " ");
+        display(root.right);
+    }
+}
+
+
     // Function to construct the binary search tree by level
     public void constructTree() {
         Scanner scanner = new Scanner(System.in);
@@ -183,6 +199,7 @@ class Main {
             System.out.println("7. Inorder traversal");
             System.out.println("8. Preorder traversal");
             System.out.println("9. Postorder traversal");
+            System.out.println("10. Display all entered nodes");
             System.out.println("0. Exit");
 
             System.out.print("Enter your choice: ");
@@ -235,6 +252,10 @@ class Main {
                     System.out.print("Postorder traversal: ");
                     tree.postorder();
                     break;
+                case 10:
+                    tree.display();
+                    break;
+                
                 case 0:
                     System.out.println("Exiting the program. Goodbye!");
                     break;
