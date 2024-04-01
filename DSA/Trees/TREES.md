@@ -1,4 +1,4 @@
-![image](https://github.com/ShrihariKasar/Java-Programs/assets/153658279/98b72504-f472-41e1-a6aa-e240dab5c589)# 1. Binary Search Tree Java Program
+# 1. Binary Search Tree Java Program
 
 This repository contains a Java program for a Binary Search Tree (BST) with various functionalities. The program allows users to create a tree by level, insert nodes using an array, find the number of nodes on the longest path from the root, find the minimum value, swap left and right pointers, search for a value, and perform inorder, preorder, and postorder traversals.
 
