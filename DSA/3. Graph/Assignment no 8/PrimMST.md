@@ -32,11 +32,46 @@ Prim's algorithm is a greedy algorithm that finds a minimum spanning tree for a 
 
 5. Follow the on-screen instructions to input the number of edges, vertices, and the details of each edge (source, destination, and weight).
 
-## Sample Input
+# Sample Input
 
-When running the program, you will be prompted to input the number of edges, vertices, and the details of each edge. Here's a sample input:
+## When running the program, you will be prompted to input the number of edges, vertices, and the details of each edge. Here's a sample input:
+
+- Input Graph:
+- ENTER NO OF EDGES: 5
+- ENTER NO OF VERTICES: 4
+- ENTER 1ST VERTEX: A
+- ENTER 2ND VERTEX: B
+- ENTER WEIGHT: 10
+- ENTER 1ST VERTEX: B
+- ENTER 2ND VERTEX: C
+- ENTER WEIGHT: 20
+- ENTER 1ST VERTEX: C
+- ENTER 2ND VERTEX: D
+- ENTER WEIGHT: 30
+- ENTER 1ST VERTEX: D
+- ENTER 2ND VERTEX: A
+- ENTER WEIGHT: 5
+- ENTER 1ST VERTEX: B
+- ENTER 2ND VERTEX: D
+- ENTER WEIGHT: 15
 
 
+# Sample Output
+
+## Based on the input provided above, the program will output:
+
+- Input Graph:
+- A B 10
+- B C 20
+- C D 30
+- D A 5
+- B D 15
+
+## Resulting Minimum Spanning Tree (MST):
+- A D 5
+- B A 10
+- D C 30
+  
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
