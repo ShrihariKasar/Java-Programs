@@ -85,11 +85,16 @@ class ExpressionsTree {
                     break;
                 case 2:
                     tree.deleteTree(tree.root);
+                    tree.root = null; // Set root to null after deleting the tree
                     System.out.println("Expression tree deleted.");
                     break;
                 case 3:
-                    System.out.println("Postorder Traversal:");
-                    tree.showPostOrder(tree.root);
+                    if (tree.root == null) {
+                        System.out.println("Expression tree is empty!");
+                    } else {
+                        System.out.println("Postorder Traversal:");
+                        tree.showPostOrder(tree.root);
+                    }
                     break;
                 case 4:
                     System.out.println("Exiting...");
