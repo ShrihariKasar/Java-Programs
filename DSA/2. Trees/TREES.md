@@ -2,8 +2,8 @@
 
 This repository contains a Java program for a Binary Search Tree (BST) with various functionalities. The program allows users to create a tree by level, insert nodes using an array, find the number of nodes on the longest path from the root, find the minimum value, swap left and right pointers, search for a value, and perform inorder, preorder, and postorder traversals.
 
-- [`TreeNode.java`:](https://github.com/ShrihariKasar/Java-Programs/blob/main/DSA/Trees/TreeNode.java) Tree Implementation in Java
-- [`Node.java`:](https://github.com/ShrihariKasar/Java-Programs/blob/main/DSA/Trees/Node.java) Tree Implementation by taking its level from user in Java
+- [`TreeNode.java`:](https://github.com/ShrihariKasar/Java-Programs/blob/main/DSA/2.%20Trees/Assignment-no-3%264/Node/TreeNode.java) Tree Implementation in Java
+- [`Node.java`:](https://github.com/ShrihariKasar/Java-Programs/blob/main/DSA/2.%20Trees/Assignment-no-3%264/Node/Node.java) Tree Implementation by taking its level from user in Java
 - [`BST.java`:](https://github.com/ShrihariKasar/Java-Programs/blob/main/DSA/Trees/Assignment-no-3%264/BST.java) Java program to demonstrate basic operations on a Binary Search Tree (BST) 
 
 ## Getting Started

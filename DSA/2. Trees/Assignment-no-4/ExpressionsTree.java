@@ -17,92 +17,40 @@ class ExpressionsTree {
         root = null;
     }
 
-    void insert(String expression) {
-        char[] charArray = expression.toCharArray();
-        root = insertNode(charArray, root, 0);
+    void insertPrefixExpression(String prefixExpression) {
+        char[] tokens = prefixExpression.toCharArray();
+        root = constructExpressionTree(tokens, new int[]{0});
     }
 
-    Node insertNode(char[] expression, Node root, int i) {
-        if (i < expression.length) {
-            Node temp = new Node(expression[i]);
-            root = temp;
+    Node constructExpressionTree(char[] tokens, int[] index) {
+        if (index[0] >= tokens.length)
+            return null;
 
-            if (isOperator(expression[i])) {
-                root.left = insertNode(expression, root.left, 2 * i + 1);
-                root.right = insertNode(expression, root.right, 2 * i + 2);
-            }
+        char token = tokens[index[0]];
+        index[0]++;
+
+        Node node = new Node(token);
+
+        if (isOperator(token)) {
+            node.left = constructExpressionTree(tokens, index);
+            node.right = constructExpressionTree(tokens, index);
         }
-        return root;
+
+        return node;
     }
 
     boolean isOperator(char c) {
-        return c == '+' || c == '-' || c == '*' || c == '/' || c == '(' || c == ')';
+        return c == '+' || c == '-' || c == '*' || c == '/';
     }
 
-    Node delete(Node root, char key) {
+    void deleteTree(Node root) {
         if (root == null)
-            return root;
+            return;
 
-        if (root.left == null && root.right == null && root.data == key)
-            return null;
+        deleteTree(root.left);
+        deleteTree(root.right);
 
-        Node parent = null;
-        Node current = root;
-        while (current != null && current.data != key) {
-            parent = current;
-            if (current.data < key)
-                current = current.right;
-            else
-                current = current.left;
-        }
-
-        if (current == null) // Key not found
-            return root;
-
-        if (current.left == null && current.right == null) {
-            if (current != root) {
-                if (parent.left == current)
-                    parent.left = null;
-                else
-                    parent.right = null;
-            } else
-                root = null;
-        } else if (current.left == null) {
-            if (current != root) {
-                if (parent.left == current)
-                    parent.left = current.right;
-                else
-                    parent.right = current.right;
-            } else
-                root = current.right;
-        } else if (current.right == null) {
-            if (current != root) {
-                if (parent.left == current)
-                    parent.left = current.left;
-                else
-                    parent.right = current.left;
-            } else
-                root = current.left;
-        } else {
-            Node successor = getSuccessor(current);
-            if (current != root) {
-                if (parent.left == current)
-                    parent.left = successor;
-                else
-                    parent.right = successor;
-            } else
-                root = successor;
-
-            successor.left = current.left;
-        }
-        return root;
-    }
-
-    Node getSuccessor(Node node) {
-        Node current = node.right;
-        while (current != null && current.left != null)
-            current = current.left;
-        return current;
+        root = null;
     }
 
     void showPostOrder(Node root) {
@@ -122,8 +70,8 @@ class ExpressionsTree {
         char key;
         do {
             System.out.println("\nMenu:");
-            System.out.println("1. Insert Expression");
-            System.out.println("2. Delete a Node");
+            System.out.println("1. Insert prefix Expression");
+            System.out.println("2. Delete the Tree");
             System.out.println("3. Show Postorder Traversal");
             System.out.println("4. Exit");
             System.out.print("Enter your choice: ");
@@ -131,20 +79,13 @@ class ExpressionsTree {
 
             switch (choice) {
                 case 1:
-                    System.out.print("Enter the expression: ");
-                    String expression = scanner.next();
-                    tree.insert(expression);
+                    System.out.print("Enter the prefix expression: ");
+                    String prefixExpression = scanner.next();
+                    tree.insertPrefixExpression(prefixExpression);
                     break;
                 case 2:
-                    if (tree.root != null) {
-                        System.out.print("Enter the node to delete: ");
-                        key = scanner.next().charAt(0);
-                        tree.root = tree.delete(tree.root, key);
-                        System.out.println("Expression tree after deletion:");
-                        tree.showPostOrder(tree.root);
-                    } else {
-                        System.out.println("Expression tree is empty!");
-                    }
+                    tree.deleteTree(tree.root);
+                    System.out.println("Expression tree deleted.");
                     break;
                 case 3:
                     System.out.println("Postorder Traversal:");
