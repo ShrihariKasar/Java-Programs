@@ -26,7 +26,7 @@ These instructions will help you set up and run the Java program on your local m
 
 # 2. Expression Tree
 
-[`ExpressionsTree.java`:](https://github.com/ShrihariKasar/Java-Programs/blob/main/DSA/Trees/Assignment-no-5/ExpressionsTree.java)
+[`ExpressionsTree.java`:](https://github.com/ShrihariKasar/Java-Programs/blob/main/DSA/Trees/Assignment-no-4/ExpressionsTree.java)
 - This Java program demonstrates the creation and manipulation of an expression tree.
 
 An expression tree is a binary tree where each internal node represents an operator and each leaf node represents an operand. This program allows users to insert an expression, delete a node from the expression tree, and display the postorder traversal of the expression tree.
@@ -39,7 +39,7 @@ An expression tree is a binary tree where each internal node represents an opera
 
 # 3. Threaded Binary Tree
 
-[`ThreadedBinaryTree.java`:](https://github.com/ShrihariKasar/Java-Programs/blob/main/DSA/Trees/Assignment-no-6/ThreadedBinaryTree.java)
+[`ThreadedBinaryTree.java`:](https://github.com/ShrihariKasar/Java-Programs/blob/main/DSA/Trees/Assignment-no-5/ThreadedBinaryTree.java)
 - This Java program implements a threaded binary tree, which is a binary tree where some nodes have additional links (threads) that facilitate traversal. 
 
 ## Overview

@@ -74,12 +74,33 @@ class Graph {
 class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Menu:");
-        System.out.println("1. BFS");
-        System.out.println("2. DFS");
-        System.out.print("Enter choice: ");
-        int choice = scanner.nextInt();
+        boolean exit = false;
 
+        while (!exit) {
+            System.out.println("Menu:");
+            System.out.println("1. Perform Breadth First Search(BFS)");
+            System.out.println("2. Perform Depth First Search(DFS)");
+            System.out.println("3. Exit");
+            System.out.print("Enter choice: ");
+            int choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    performSearch(scanner, choice);
+                    break;
+                case 2:
+                    performSearch(scanner, choice);
+                    break;
+                case 3:
+                    exit = true;
+                    break;
+                default:
+                    System.out.println("Invalid choice");
+            }
+        }
+    }
+
+    public static void performSearch(Scanner scanner, int choice) {
         System.out.print("Enter vertex count: ");
         int vCount = scanner.nextInt();
         Graph graph = new Graph(vCount);
@@ -96,8 +117,6 @@ class Main {
             case 2:
                 graph.DFS(startVertex - 1); // Adjust for 0-based indexing
                 break;
-            default:
-                System.out.println("Invalid choice");
         }
     }
 }
