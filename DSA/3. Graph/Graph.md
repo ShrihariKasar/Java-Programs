@@ -1,6 +1,6 @@
 # Graph Traversal Program
 
-- [`Graph.java`:](https://github.com/ShrihariKasar/Java-Programs/blob/main/DSA/3.%20Graph/Assignment%20no%207/Graph.java)This Java program allows you to perform Breadth-First Search (BFS) and Depth-First Search (DFS) on a graph represented using an adjacency matrix.
+- [`Graph.java`:](https://github.com/ShrihariKasar/Java-Programs/blob/main/DSA/3.%20Graph/Assignment%20no%206/Graph.java)This Java program allows you to perform Breadth-First Search (BFS) and Depth-First Search (DFS) on a graph represented using an adjacency matrix.
 
 ## Table of Contents
 
@@ -74,7 +74,7 @@ This program provides functionalities to perform BFS and DFS on a graph. It uses
 
 # Prim's Algorithm for Minimum Spanning Tree (MST)
 
-- [`PrimMST.java`:](https://github.com/ShrihariKasar/Java-Programs/blob/main/DSA/3.%20Graph/Assignment%20no%208/PrimMST.java)This Java program implements Prim's algorithm to find the Minimum Spanning Tree (MST) of a weighted undirected graph.
+- [`PrimMST.java`:](https://github.com/ShrihariKasar/Java-Programs/blob/main/DSA/3.%20Graph/Assignment%20no%207/PrimMST.java)This Java program implements Prim's algorithm to find the Minimum Spanning Tree (MST) of a weighted undirected graph.
 
 ## Overview
 
