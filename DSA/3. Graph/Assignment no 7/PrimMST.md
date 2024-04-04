@@ -1,6 +1,6 @@
 # Prim's Algorithm for Minimum Spanning Tree (MST)
 
-- [`PrimMST.java`:](https://github.com/ShrihariKasar/Java-Programs/blob/main/DSA/3.%20Graph/Assignment%20no%208/PrimMST.java)This Java program implements Prim's algorithm to find the Minimum Spanning Tree (MST) of a weighted undirected graph.
+- [`PrimMST.java`:](https://github.com/ShrihariKasar/Java-Programs/blob/main/DSA/3.%20Graph/Assignment%20no%207/PrimMST.java)This Java program implements Prim's algorithm to find the Minimum Spanning Tree (MST) of a weighted undirected graph.
 
 ## Table of Contents
 
