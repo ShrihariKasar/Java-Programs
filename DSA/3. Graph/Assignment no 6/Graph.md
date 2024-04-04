@@ -1,6 +1,6 @@
 # Graph Traversal Program
 
-- [`Graph.java`:](https://github.com/ShrihariKasar/Java-Programs/blob/main/DSA/3.%20Graph/Assignment%20no%207/Graph.java)This Java program allows you to perform Breadth-First Search (BFS) and Depth-First Search (DFS) on a graph represented using an adjacency matrix.
+- [`Graph.java`:](https://github.com/ShrihariKasar/Java-Programs/blob/main/DSA/3.%20Graph/Assignment%20no%206/Graph.java)This Java program allows you to perform Breadth-First Search (BFS) and Depth-First Search (DFS) on a graph represented using an adjacency matrix.
 
 ## Table of Contents
 
