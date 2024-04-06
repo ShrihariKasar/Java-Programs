@@ -39,7 +39,7 @@ An expression tree is a binary tree where each internal node represents an opera
 
 # 3. Threaded Binary Tree
 
-[`ThreadedBinaryTree.java`:](https://github.com/ShrihariKasar/Java-Programs/blob/main/DSA/Trees/Assignment-no-5/ThreadedBinaryTree.java)
+[`Tnode.java`:](https://github.com/ShrihariKasar/Java-Programs/blob/main/DSA/2.%20Trees/Assignment-no-5/Tnode.java)
 - This Java program implements a threaded binary tree, which is a binary tree where some nodes have additional links (threads) that facilitate traversal. 
 
 ## Overview
