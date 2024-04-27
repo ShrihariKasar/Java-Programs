@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
@@ -45,7 +46,7 @@ public class PrimMST {
         int[] key = new int[vertices];
         Arrays.fill(key, Integer.MAX_VALUE);
 
-        PriorityQueue<Edge> pq = new PriorityQueue<>(vertices, (a, b) -> a.weight - b.weight);
+        PriorityQueue<Edge> pq = new PriorityQueue<>(vertices, Comparator.comparingInt(e -> e.weight));
         key[0] = 0;
         pq.add(new Edge(-1, 0, 0));
 
@@ -76,7 +77,9 @@ public class PrimMST {
         // Print the MST
         System.out.println("\nResulting Minimum Spanning Tree (MST):");
         for (int i = 1; i < vertices; i++) {
-            System.out.println((char)(parent[i].source + 'A') + " " + (char)(parent[i].destination + 'A') + " " + parent[i].weight);
+            if (parent[i] != null) {
+                System.out.println((char)(parent[i].source + 'A') + " " + (char)(parent[i].destination + 'A') + " " + parent[i].weight);
+            }
         }
     }
 
