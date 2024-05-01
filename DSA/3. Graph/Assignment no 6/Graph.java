@@ -1,122 +1,106 @@
-import java.util.Scanner;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
-class Graph {
-    int[][] adjMatrix;
-    int vCount;
-    boolean[] visited;
+public class Graph {
+    private int V;
+    private LinkedList<Integer> adj[];
 
-    Graph(int vCount) {
-        this.vCount = vCount;
-        adjMatrix = new int[vCount][vCount];
-        visited = new boolean[vCount];
+    // Constructor
+    Graph(int v) {
+        V = v;
+        adj = new LinkedList[v];
+        for (int i = 0; i < v; ++i)
+            adj[i] = new LinkedList();
     }
 
-    void readEdges(Scanner scanner) {
-        System.out.println("Enter edges (source destination): ");
-        for (int i = 0; i < vCount; i++) {
-            for (int j = 0; j < vCount; j++) {
-                System.out.print("Enter edge " + (i + 1) + " to " + (j + 1) + ": ");
-                adjMatrix[i][j] = scanner.nextInt();
-            }
+    // Function to add an edge into the graph
+    void addEdge(int v, int w) {
+        adj[v].add(w);
+    }
+
+    // DFS traversal of the vertices reachable from v
+    void DFSUtil(int v, boolean visited[]) {
+        // Mark the current node as visited and print it
+        visited[v] = true;
+        System.out.print(v + " ");
+
+        // Recur for all the vertices adjacent to this vertex
+        Iterator<Integer> i = adj[v].listIterator();
+        while (i.hasNext()) {
+            int n = i.next();
+            if (!visited[n])
+                DFSUtil(n, visited);
         }
     }
 
-    void displayAdjacency() {
-        System.out.println("Adjacency Matrix:");
-        for (int i = 0; i < vCount; i++) {
-            for (int j = 0; j < vCount; j++) {
-                System.out.print(adjMatrix[i][j] + " ");
-            }
-            System.out.println();
-        }
+    // The function to do DFS traversal. It uses recursive DFSUtil()
+    void DFS(int v) {
+        // Mark all the vertices as not visited(set as
+        // false by default in java)
+        boolean visited[] = new boolean[V];
+
+        // Call the recursive helper function to print DFS traversal
+        DFSUtil(v, visited);
     }
 
-    void BFS(int start) {
-        Queue<Integer> queue = new LinkedList<>();
-        queue.offer(start);
-        visited[start] = true;
-        System.out.print("BFS: ");
-        while (!queue.isEmpty()) {
-            int current = queue.poll();
-            System.out.print(current + " ");
-            for (int i = 0; i < vCount; i++) {
-                if (adjMatrix[current][i] == 1 && !visited[i]) {
-                    queue.offer(i);
-                    visited[i] = true;
+    // BFS traversal of the vertices reachable from s
+    void BFS(int s) {
+        // Mark all the vertices as not visited(By default
+        // set as false)
+        boolean visited[] = new boolean[V];
+
+        // Create a queue for BFS
+        LinkedList<Integer> queue = new LinkedList<Integer>();
+
+        // Mark the current node as visited and enqueue it
+        visited[s] = true;
+        queue.add(s);
+
+        while (queue.size() != 0) {
+            // Dequeue a vertex from queue and print it
+            s = queue.poll();
+            System.out.print(s + " ");
+
+            // Get all adjacent vertices of the dequeued vertex s
+            // If an adjacent vertex has not been visited, then mark it
+            // visited and enqueue it
+            Iterator<Integer> i = adj[s].listIterator();
+            while (i.hasNext()) {
+                int n = i.next();
+                if (!visited[n]) {
+                    visited[n] = true;
+                    queue.add(n);
                 }
             }
         }
-        System.out.println();
     }
 
-    void DFS(int start) {
-        Stack<Integer> stack = new Stack<>();
-        stack.push(start);
-        visited[start] = true;
-        System.out.print("DFS: ");
-        while (!stack.isEmpty()) {
-            int current = stack.pop();
-            System.out.print(current + " ");
-            for (int i = 0; i < vCount; i++) {
-                if (adjMatrix[current][i] == 1 && !visited[i]) {
-                    stack.push(i);
-                    visited[i] = true;
-                }
-            }
-        }
-        System.out.println();
-    }
-}
-
-class Main {
-    public static void main(String[] args) {
+    public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
-        boolean exit = false;
 
-        while (!exit) {
-            System.out.println("Menu:");
-            System.out.println("1. Perform Breadth First Search(BFS)");
-            System.out.println("2. Perform Depth First Search(DFS)");
-            System.out.println("3. Exit");
-            System.out.print("Enter choice: ");
-            int choice = scanner.nextInt();
+        System.out.println("Enter the number of landmarks: ");
+        int V = scanner.nextInt();
+        Graph graph = new Graph(V);
 
-            switch (choice) {
-                case 1:
-                    performSearch(scanner, choice);
-                    break;
-                case 2:
-                    performSearch(scanner, choice);
-                    break;
-                case 3:
-                    exit = true;
-                    break;
-                default:
-                    System.out.println("Invalid choice");
-            }
+        System.out.println("Enter the number of edges: ");
+        int E = scanner.nextInt();
+
+        System.out.println("Enter edges (vertex1 vertex2): ");
+        for (int i = 0; i < E; i++) {
+            int v1 = scanner.nextInt();
+            int v2 = scanner.nextInt();
+            graph.addEdge(v1, v2);
         }
-    }
 
-    public static void performSearch(Scanner scanner, int choice) {
-        System.out.print("Enter vertex count: ");
-        int vCount = scanner.nextInt();
-        Graph graph = new Graph(vCount);
-        graph.readEdges(scanner);
-        graph.displayAdjacency();
+        System.out.println("Enter the starting vertex for DFS and BFS: ");
+        int start = scanner.nextInt();
 
-        System.out.print("Enter starting vertex: ");
-        int startVertex = scanner.nextInt();
+        System.out.println("DFS traversal starting from " + start + ": ");
+        graph.DFS(start);
+        System.out.println();
 
-        switch (choice) {
-            case 1:
-                graph.BFS(startVertex - 1); // Adjust for 0-based indexing
-                break;
-            case 2:
-                graph.DFS(startVertex - 1); // Adjust for 0-based indexing
-                break;
-        }
+        System.out.println("BFS traversal starting from " + start + ": ");
+        graph.BFS(start);
+
+        scanner.close();
     }
 }
